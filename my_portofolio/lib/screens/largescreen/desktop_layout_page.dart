@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my/constants/colors.dart';
+import 'package:my/constants/styles.dart';
 
 
 class DesktopLayout extends StatefulWidget {
@@ -17,16 +18,34 @@ class _DesktopLayoutState extends State<DesktopLayout> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              AppColors.ebony,
-              AppColors.studio
+        decoration: Styles.gradientDecoration,
+
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+
+              Row(
+
+                children: [
+                  
+                  Column(
+
+                    children: [Row(
+                      
+                      children: [
+
+                        HeaderTextWidget()
+
+                    ],
+                    )
+                    ]
+                  )
+                ]
+              )
             ]
           )
         )
-      )
-
+      ),
     );
   }
 }
