@@ -7,11 +7,11 @@ class TabletLayout extends StatefulWidget {
   State<TabletLayout> createState() => _TabletLayoutState();
 }
 
-class TabletLayoutPage extends State<TabletLayout> {
+class _TabletLayoutState extends State<TabletLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.blue,
     );
   }
 }
