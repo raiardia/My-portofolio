@@ -33,47 +33,7 @@ class SocialWidget extends StatelessWidget {
         const SizedBox(
           width: 10,
         ),
-        Container(
-          height: 40,
-          width: 40,
-          decoration: BoxDecoration(
-              color: Colors.transparent,
-              shape: BoxShape.circle,
-              border: Border.all(color: AppColors.studio.withOpacity(0.5))),
-          child: Center(
-            child: IconButton(
-              hoverColor: AppColors.paleSlate,
-              onPressed: () {},
-              icon: FaIcon(
-                FontAwesomeIcons.dribbble,
-                color: AppColors.studio,
-                size: 15,
-              ),
-            ),
-          ),
-        ),
-        const SizedBox(
-          width: 10,
-        ),
-        Container(
-          height: 40,
-          width: 40,
-          decoration: BoxDecoration(
-              color: Colors.transparent,
-              shape: BoxShape.circle,
-              border: Border.all(color: AppColors.studio.withOpacity(0.5))),
-          child: Center(
-            child: IconButton(
-              hoverColor: AppColors.paleSlate,
-              onPressed: () {},
-              icon: FaIcon(
-                FontAwesomeIcons.upwork,
-                color: AppColors.studio,
-                size: 15,
-              ),
-            ),
-          ),
-        ),
+        
         const SizedBox(
           width: 10,
         ),

@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my/constants/colors.dart';
-import 'package:my/screens/widgets/download_cv_widget.dart';
-import 'package:my/screens/widgets/socail_section.dart';
 import 'package:my/screens/widgets/social_widget.dart';
 import 'package:my/screens/widgets/text_widet.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
@@ -26,7 +24,7 @@ class HeaderTextWidget extends StatelessWidget {
           Container(
               child: TextWidget(
             sSize: size,
-            text: "I am Jobin",
+            text: "Hello, It's me",
             color: Colors.white,
             size: 26,
             fw: FontWeight.bold,
@@ -35,8 +33,7 @@ class HeaderTextWidget extends StatelessWidget {
           GradientTextWidget(
             size: size,
             alignment: TextAlign.center,
-            text1: "Flutter Developer",
-            text2: "UX Designer",
+            text1: "Rai Ardia Anggreni",
           ),
           SizedBox(
             width: size.width * 0.5,
@@ -107,10 +104,7 @@ class Social_large extends StatelessWidget {
       width: size.width * 0.5,
       child: Row(
         children: [
-          DownloadCVButton(),
-          SizedBox(
-            width: 20,
-          ),
+          
           SocialWidget()
         ],
       ),
