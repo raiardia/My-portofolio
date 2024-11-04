@@ -26,14 +26,15 @@ class HeaderTextWidget extends StatelessWidget {
             sSize: size,
             text: "Hello, It's me",
             color: Colors.white,
-            size: 26,
+            size: 30,
             fw: FontWeight.bold,
             alignment: TextAlign.center,
           )),
           GradientTextWidget(
             size: size,
             alignment: TextAlign.center,
-            text1: "Rai Ardia Anggreni",
+            text1: "Ni Made",
+            text2: "Rai Ardia Anggreni",
           ),
           SizedBox(
             width: size.width * 0.5,
@@ -41,8 +42,8 @@ class HeaderTextWidget extends StatelessWidget {
                 sSize: size,
                 alignment: TextAlign.center,
                 text:
-                    "I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people",
-                size: 16,
+                    "I am a fifth-semester Information Technology student at Universitas Pendidikan Nasional (ID: 42230019), with a strong interest in application development and UX design. I am passionate about learning new skills and applying them to create impactful solutions.",
+                size: 17,
                 color: Colors.white,
                 fw: FontWeight.normal),
           ),
