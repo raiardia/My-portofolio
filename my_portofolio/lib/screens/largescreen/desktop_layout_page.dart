@@ -64,7 +64,7 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                 child: Column(
                   children: [
                     GradientText(
-                      "My Quality Services",
+                      "My Skills",
                       colors: [
                         AppColors.studio,
                         AppColors.paleSlate,
@@ -78,7 +78,7 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                       height: size.height * 0.02,
                     ),
                     Text(
-                      'We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.',
+                      'As a fifth-semester Information Technology student, I am building a foundation in:',
                       style: TextStyle(
                           fontSize: size.width * 0.012,
                           fontFamily: 'Poppins',

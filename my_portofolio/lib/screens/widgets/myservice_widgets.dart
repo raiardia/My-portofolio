@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my/constants/colors.dart';
 import 'package:my/screens/widgets/text_widet.dart';
@@ -16,18 +15,37 @@ class MyServicesWidget extends StatefulWidget {
 class _MyServicesWidgetState extends State<MyServicesWidget> {
   List<bool> _isHovered = [false, false, false];
 
+  // Define a list of services with titles and descriptions
+  final List<Map<String, String>> services = [
+    {
+      "title": "Application Development",
+      "description":
+          "Learning to create simple, responsive mobile apps with Flutter."
+    },
+    {
+      "title": "UI/UX Design",
+      "description":
+          "Developing an understanding of intuitive design and user experience principles."
+    },
+    {
+      "title": "Problem Solving",
+      "description":
+          "Strengthening my ability to analyze and approach technical challenges logically."
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
         shrinkWrap: true,
-        itemCount: 3,
+        itemCount: services.length,
         itemBuilder: (context, index) {
           return MouseRegion(
             onEnter: (_) => setState(() => _isHovered[index] = true),
             onExit: (_) => setState(() => _isHovered[index] = false),
             child: AnimatedContainer(
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
-                duration: Duration(microseconds: 300),
+                duration: Duration(milliseconds: 300),
                 curve: Curves.easeInOut,
                 margin:
                     EdgeInsets.symmetric(horizontal: widget.size.width * 0.05),
@@ -61,7 +79,7 @@ class _MyServicesWidgetState extends State<MyServicesWidget> {
                           ),
                           TextWidget(
                             sSize: widget.size,
-                            text: "Branding Desing",
+                            text: services[index]["title"]!,
                             size: 22,
                             color: Colors.white,
                           ),
@@ -71,8 +89,7 @@ class _MyServicesWidgetState extends State<MyServicesWidget> {
                           Flexible(
                               child: TextWidget(
                             sSize: widget.size,
-                            text:
-                                "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.",
+                            text: services[index]["description"]!,
                             size: 16,
                             color: Colors.white,
                           )),
@@ -100,7 +117,7 @@ class _MyServicesWidgetState extends State<MyServicesWidget> {
                           ),
                           TextWidget(
                             sSize: widget.size,
-                            text: "Branding Desing",
+                            text: services[index]["title"]!,
                             size: 20,
                             color: Colors.white,
                           ),
@@ -111,10 +128,9 @@ class _MyServicesWidgetState extends State<MyServicesWidget> {
                             direction: Axis.horizontal,
                             children: [
                               TextWidget(
-                                alignment: TextAlign.center,
+                                alignment: TextAlign.right,
                                 sSize: widget.size,
-                                text:
-                                    "We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.",
+                                text: services[index]["description"]!,
                                 size: 16,
                                 color: Colors.white,
                               )
